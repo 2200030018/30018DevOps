@@ -1,0 +1,21 @@
+# Step 1: Create a new branch and switch to it
+git checkout -b newbranch
+
+# Step 2: Add new files to the branch
+# (Create or modify files as needed, then add them to staging)
+git add .
+
+# Step 3: Commit the changes
+git commit -m "Added new files to newbranch"
+
+# Step 4: Push the new branch to the remote repository
+git push origin newbranch
+
+# Step 5: Switch to the main branch
+git checkout main
+
+# Step 6: Merge the new branch into the main branch
+git merge newbranch
+
+# Step 7: Push the updated main branch to the remote repository
+git push origin main
